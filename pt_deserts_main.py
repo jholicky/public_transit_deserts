@@ -17,7 +17,7 @@ from sys import argv, exit
 #   - Better printing for the most isolated points
 #   - I/O for parameters (i.e. maximum calls to API allowed, city coordinates, test size)
 #   - Find a way to get city boundaries without asking the user (for major cities)
-
+#   - Wrap everything in a C I/O loop
 
 
 

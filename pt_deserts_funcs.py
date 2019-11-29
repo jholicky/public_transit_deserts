@@ -81,6 +81,7 @@ def cacheArea(areaName, north, south, east, west, hereParameters, testHeight = N
   here_credentials = open("credentials/here_credentials.txt", "r")
   app_id = here_credentials.readline()[:-1]
   app_code = here_credentials.readline()[:-1]
+  here_credentials.close()
   request_search_url = "https://places.cit.api.here.com/places/v1/browse/pt-stops"
   
   borderLengths = getBorderLengths(north, south, east, west)
@@ -133,23 +134,26 @@ def cacheArea(areaName, north, south, east, west, hereParameters, testHeight = N
   
 def loadFromCache(areaName):
 
-  FILE = open("data/"+areaName+".grid", "r")
-  areaName = FILE.readline()[:-1]
-  NSEW = FILE.readline()[:-1].split(" ")
-  HxW = FILE.readline()[:-1].split(" ")
-  data = []
-  for row in range(int(HxW[0])):
-    data += [FILE.readline()[:-1].split(" ")]
+  if cached(areaName):
+    FILE = open("data/"+areaName+".grid", "r")
+    areaName = FILE.readline()[:-1]
+    NSEW = FILE.readline()[:-1].split(" ")
+    HxW = FILE.readline()[:-1].split(" ")
+    data = []
+    for row in range(int(HxW[0])):
+      data += [FILE.readline()[:-1].split(" ")]
+  else:
+    return 1 # handle this error better
     
   return {"areaName": areaName, "NSEW": NSEW, "HxW": HxW, "data": data}
   
 def cached(areaName):
 
-  filename = [areaName+".grid"]
+  filename = areaName+".grid"
   path = "data"
   
   for files in walk(path, topdown = True):
-    if filename in files:
+    if filename in files[2]:
       return True
       
   return False
