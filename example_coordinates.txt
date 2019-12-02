@@ -1,0 +1,13 @@
+# Examples (just find the NW and SE corners):
+
+# Lauderdale, MN (basically the city limits):
+# 45.000659, -93.207669 (NW corner)
+# 44.988095, -93.197412 (SE corner)
+
+# Minneapolis, MN (city limits simplified):
+# 45.053031, -93.330048 (NW corner)
+# 44.889767, -93.193761 (SE corner)
+
+# Washington, DC (the Mall and surrounding areas):
+# 38.919399, -77.054929 (NW corner)
+# 38.887674, -77.003468 (SE corner)
