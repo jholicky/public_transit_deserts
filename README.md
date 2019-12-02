@@ -1,7 +1,8 @@
 # public_transit_deserts
-## Before you read further, note that you will need your own here account (and by extension your own app_id and app_code) in order to use this program. you can make a free account at https://developer.here.com/ and then create a file named here_credentials.txt in the credentials subdirectory with the format
-### app_id
-### app_code
+### Before you read further, note that you will need your own Here account (and by extension your own app_id and app_code) in order to use this program. You can make a free account at https://developer.here.com/ and then create a file named here_credentials.txt in the credentials subdirectory with the format:
+app_id\
+app_code
+---
 This program uses the Here API, specifically the Public Transit entrypoint of the Places API found here: \
 https://developer.here.com/documentation/places/topics_api/resource-browse-pt-stops.html \
 It allows the user to save their own grids made up of 100m by 100m blocks, each having a value which corresponds \
