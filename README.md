@@ -1,7 +1,7 @@
 # public_transit_deserts
-## BEFORE YOU READ FURTHER, NOTE THAT YOU WILL NEED YOUR OWN HERE ACCOUNT (AND BY EXTENSION YOUR OWN \
-## APP_ID AND APP_CODE) IN ORDER TO USE THIS PROGRAM. YOU CAN MAKE A FREE ACCOUNT AT https://developer.here.com/ \
-## AND THEN CREATE A FILE NAMED here_credentials.txt IN THE credentials SUBDIRECTORY WITH THE FORMAT \
+## Before you read further, note that you will need your own here account (and by extension your own
+## app_id and app_code) in order to use this program. you can make a free account at https://developer.here.com/
+## and then create a file named here_credentials.txt in the credentials subdirectory with the format
 ## app_id
 ## app_code
 This program uses the Here API, specifically the Public Transit entrypoint of the Places API found here: \
