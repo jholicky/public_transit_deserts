@@ -1,5 +1,6 @@
 # public_transit_deserts
 ### Before you read further, note that you will need your own Here account (and by extension your own app_id and app_code) in order to use this program. You can make a free account at https://developer.here.com/ and then create a file named here_credentials.txt in the credentials subdirectory with the format:
+\
 app_id\
 app_code
 ---
