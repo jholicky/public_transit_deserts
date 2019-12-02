@@ -18,6 +18,7 @@ In most cities with good public transit access, the algorithm only needs to look
   if so, then we can eliminate all its neighbors (the NW, N, NE, SW, S, SE, E, and W neighbors to it).
 - Otherwise, check if the point is less than ((current max distance) - 100) meters away from the nearest PT stop:
   if so, then we can eliminate its cardinal neighbors (the N, S, E, and W neighbors to it).
+
 \
 This is because of the way that a grid of squares works (100m between points on the grid, 100*sqrt(2)m betwen points
 diagonal to each other). We could add more criteria, but I haven't checked the runtime differences. This would
@@ -27,6 +28,7 @@ To run on a Unix based system, download the project, navigate to its main direct
 `python3 main.py`
 This program was tested in Python 3.7 and will not work in Python 2.7 or earlier without some tweaking.
 \
+
 Here are selected examples from my to-do list for this project:
 - Improve documentation and commenting.
 - Investigate pros/cons of adding more distance checks at each point in the main PT Desert algorithm.
